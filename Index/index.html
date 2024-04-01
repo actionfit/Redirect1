@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecionamento Automático para WhatsApp</title>
+    <script>
+        // Função para redirecionar automaticamente para um número de WhatsApp aleatório
+        function redirecionarParaWhatsApp() {
+            // Array com os links para os números de WhatsApp
+            var linksWhatsApp = [
+                "https://wa.me/numero1",
+                "https://wa.me/numero2",
+                "https://wa.me/numero3",
+                "https://wa.me/numero4"
+            ];
+
+            // Escolher aleatoriamente um link
+            var linkAleatorio = linksWhatsApp[Math.floor(Math.random() * linksWhatsApp.length)];
+
+            // Redirecionar para o link escolhido
+            window.location.href = linkAleatorio;
+        }
+
+        // Chamar a função de redirecionamento assim que a página for carregada
+        window.onload = redirecionarParaWhatsApp;
+    </script>
+</head>
+<body>
+    <p>Redirecionando para o WhatsApp...</p>
+</body>
+</html>
